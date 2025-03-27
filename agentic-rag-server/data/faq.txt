@@ -1,0 +1,23 @@
+How do I reset my password?
+To reset your password, go to the login page and click "Forgot Password." Enter your registered email address, and a password reset link will be sent to your email.
+
+What should I do if I cannot log in to my account?
+If you are unable to log in, please check if your email and password are correct. If the issue persists, reset your password or contact our support team.
+
+How can I update my profile information?
+To update your profile information, log in to your account, go to the "Profile" section, and click "Edit." Make the necessary changes and click "Save."
+
+What payment methods do you accept?
+We accept payments via credit card, debit card, PayPal, and bank transfers. Please note that available options may vary by region.
+
+Can I cancel my subscription?
+Yes, you can cancel your subscription at any time. Log in to your account, navigate to the "Subscriptions" page, and click "Cancel Subscription."
+
+How do I contact customer support?
+You can contact customer support by emailing support@company.com or by calling our hotline at +1-800-123-4567.
+
+Is there a way to track my order?
+Yes, you can track your order by logging in to your account and clicking on the "Orders" section. There, you will find the tracking information for your shipment.
+
+What is your refund policy?
+Our refund policy allows you to request a refund within 30 days of purchase. Please refer to the "Refund Policy" section on our website for detailed terms and conditions.
