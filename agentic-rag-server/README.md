@@ -93,21 +93,26 @@ Backend runs on `http://localhost:5000`
 ### 🧠 Agentic RAG Workflow (Used in this App)
 
 ```mermaid
+<details> <summary>🧠 Corrected Mermaid for GitHub README</summary>
+mermaid
+Copy
+Edit
 flowchart TD
     A[User submits a question] --> B[Gemini Embedding API generates query vector]
     B --> C[Cosine similarity search across sentence embeddings]
     C --> D[Top-ranked facts selected]
-    D --> E[Facts injected into context prompt]
+    D --> E[Inject facts into context prompt]
     E --> F[Gemini 2.0 Flash generates response]
     F --> G[Frontend renders response with Markdown]
-    G --> H{Does response suggest<br>example/follow-up?}
+    G --> H{Does response suggest follow-up}
 
-    H -- Yes --> I[Show "Ask Follow-Up" button]
+    H -- Yes --> I[Show Ask Follow-Up button]
     H -- No --> Z[Done]
 
     I --> J[User clicks follow-up]
-    J --> K[New query sent: "Can you provide an example..."]
-    K --> L[Repeat embedding → retrieval → Gemini call]
-    L --> M[Follow-up response shown in UI]
+    J --> K[Send follow-up query]
+    K --> L[Repeat embedding and retrieval]
+    L --> M[Show follow-up response]
     M --> Z[Done]
+</details>
 ```
