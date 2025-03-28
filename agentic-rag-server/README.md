@@ -3,8 +3,8 @@
 
 This is a full-stack example of an **Agentic Retrieval-Augmented Generation (RAG)** system built using:
 
-- **Frontend:** React 19 + React Bootstrap
-- **Backend:** Flask (Python)
+- **Frontend:** React 19 + React Bootstrap (Vite)
+- **Backend:** Express.js (Node.js)
 - **LLM:** Google Gemini 2.0 Flash
 - **Embeddings:** Gemini `embedding-001`
 - **Semantic Retrieval:** Cosine similarity
@@ -31,27 +31,24 @@ This is a full-stack example of an **Agentic Retrieval-Augmented Generation (RAG
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-org/agentic-rag-demo.git
-cd agentic-rag-demo
+git clone https://github.com/your-org/simple-agentic-rag.git
+cd simple-agentic-rag
 ```
 
-### 2. Backend Setup (Flask)
+### 2. Backend Setup (Express.js)
 
 ```bash
-cd backend
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+cd agentic-rag-server
+npm install
+cp .env.example .env  # Create your .env and add Gemini API key
 
-pip install -r requirements.txt
-cp .env.example .env  # Add your Gemini API key to .env
-
-python app.py
+node agenticRag.js
 ```
 
 ### 3. Frontend Setup (React)
 
 ```bash
-cd frontend
+cd ../agentic-rag-ui
 npm install
 npm run dev
 ```
@@ -63,16 +60,17 @@ Backend runs on `http://localhost:5000`
 
 ## 📷 Screenshot
 
-![Agentic RAG App Screenshot](./screenshots/demo-ui.png)
+![Agentic RAG App Screenshot](screenshots/demo-ui.png)
+
 
 ---
 
 ## 📁 Folder Structure
 
 ```
-/frontend     → React Vite app
-/backend      → Flask app using LangGraph-style control
-/data/info.txt → Grounding source (retrieved facts)
+/agentic-rag-ui     → React Vite frontend
+/agentic-rag-server → Express.js backend
+/data/info.txt      → Grounding source (retrieved facts)
 ```
 
 ---
@@ -85,8 +83,8 @@ Backend runs on `http://localhost:5000`
 | LLM        | Gemini 2.0 Flash              |
 | Embedding  | Gemini `embedding-001`        |
 | Retrieval  | Cosine Similarity             |
-| Backend    | Python + Flask                |
-| Deployment | Vite (frontend), Flask dev    |
+| Backend    | Node.js + Express.js          |
+| Deployment | Vite (frontend), Node.js (server) |
 
 ---
 
@@ -113,4 +111,3 @@ flowchart TD
     L --> M[Follow-up response shown in UI]
     M --> Z[Done]
 ```
-
