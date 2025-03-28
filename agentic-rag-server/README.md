@@ -93,10 +93,6 @@ Backend runs on `http://localhost:5000`
 ### 🧠 Agentic RAG Workflow (Used in this App)
 
 ```mermaid
-<details> <summary>🧠 Corrected Mermaid for GitHub README</summary>
-mermaid
-Copy
-Edit
 flowchart TD
     A[User submits a question] --> B[Gemini Embedding API generates query vector]
     B --> C[Cosine similarity search across sentence embeddings]
@@ -114,5 +110,4 @@ flowchart TD
     K --> L[Repeat embedding and retrieval]
     L --> M[Show follow-up response]
     M --> Z[Done]
-</details>
 ```
