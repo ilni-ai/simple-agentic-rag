@@ -60,7 +60,7 @@ Backend runs on `http://localhost:5000`
 
 ## 📷 Screenshot
 
-![Agentic RAG App Screenshot](screenshots/demo-ui.png)
+![Agentic RAG App Screenshot](../screenshots/demo-ui.png)
 
 
 ---
